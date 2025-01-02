@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>St. Joseph's College</title>
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth; 
+            background-color: #121212; /* Dark background for an elegant look */
+            color: #EAEAEA; /* Light text for better readability */
+        }
+        header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 20px;
+            background: linear-gradient(90deg, #222, #121212); /* Subtle gradient */
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.6);
+        }
+        header h1 {
+            font-size: 2.2em;
+            color: #FFFFFF; /* Bright text for standout effect */
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px;
+            background-color: #1E1E1E; /* Deep neutral tone */
+            border-radius: 12px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #BBBBBB; /* Soft grey */
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #FFFFFF; /* Bright hover */
+            transform: scale(1.1); /* Subtle zoom */
+        }
+        section {
+            padding: 60px 20px; 
+            margin-top: 20px;
+        }
+        section h2 {
+            font-size: 2.5em;
+            color: #E0E0E0;
+            border-bottom: 3px solid #444;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1E1E1E;
+            color: #FFFFFF; /* Bright text for footer */
+            font-size: 1em;
+            border-top: 3px solid #444;
+        }
+        .image-grid {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        .image-grid img {
+            width: 22%;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .image-grid img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.9);
+        }
+        .enquiry-form {
+            background-color: #222222;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+        }
+        .enquiry-form h3 {
+            margin-bottom: 20px;
+            color: #FFFFFF;
+        }
+        .enquiry-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #FFFFFF;
+        }
+        .enquiry-form input, .enquiry-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 8px;
+            background-color: #1E1E1E;
+            color: #FFFFFF;
+            box-sizing: border-box;
+        }
+        .enquiry-form button {
+            background-color: #444;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .enquiry-form button:hover {
+            background-color: #666;
+            transform: translateY(-3px);
+        }
+        @media (max-width: 600px) {
+            .image-grid {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .enquiry-form {
+                padding: 20px;
+            }
+            .enquiry-form button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="st.j.png" alt="College Logo" style="width: 150px; height: 120px;">
+        <h1>St. Joseph's First Grade College</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#about"><u>About Us</u></a></li>
+            <li><a href="#lessons"><u>Lessons</u></a></li>
+            <li><a href="#enquiry"><u>Enquiry</u></a></li>
+            <li><a href="#contact"><u>Contact Us</u></a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to St. Joseph's First Grade College! Our institution is dedicated to providing top-quality education in computer science and other disciplines, helping students build strong foundations for their future careers.</p>
+        <p>We focus on fostering innovation, creativity, and critical thinking through our diverse range of programs and extracurricular activities. Join us to explore, learn, and grow in a supportive and dynamic environment.</p>
+        <p>St. Joseph’s First Grade College is one of the pioneering institutions under MDES (Mysore Diocesan Educational Society) that has been rendering yeomen service in the field of education. With more than five decades of experience in transforming young minds, the institution caters students from nursery to undergraduate courses. St. Joseph’s stands out because of its quality education endured by human values. Innumerable success stories of our alumni around the globe drive our passion to surpass our past best. The Josephite family cordially welcomes you for a memorable journey ahead.</p>
+    </section>
+
+    <!-- Lessons Section -->
+    <section id="lessons">
+        <h2>Lessons</h2>
+        <div class="image-grid">
+            <img src="html.png" alt="HTML">
+            <img src="css.png" alt="CSS">
+            <img src="js.png" alt="JavaScript">
+            <img src="react.png" alt="React">
+        </div>
+    </section>
+
+    <!-- Enquiry Section -->
+    <section id="enquiry">
+        <h2>Enquiry About College</h2>
+        <div class="enquiry-form">
+            <h3>We’d love to hear from you!</h3>
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@stjosephscollege.com</p>
+        <p>Phone: +91 9876543210</p>
+        <p>Address: St. Joseph's, Jayalakshmipuram, Mysuru, Karnataka</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 St. Joseph's First Grade College. All rights reserved.
+    </footer>
+
+</body>
+</html>
+```
